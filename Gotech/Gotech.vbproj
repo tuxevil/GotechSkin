@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7A9EBCD4-9AFF-411B-8446-02D5D054EDD2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Gotech.My.MyApplication</StartupObject>
+    <RootNamespace>Gotech</RootNamespace>
+    <AssemblyName>Gotech</AssemblyName>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Gotech.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Gotech.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AlphaGradientPanel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="GlassButton, Version=1.2.0.41852, Culture=neutral, PublicKeyToken=2e983e6e44d23a4f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\GlassButton.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Agenda.Designer.vb">
+      <DependentUpon>Agenda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Agenda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buffer.vb" />
+    <Compile Include="controlBuscaContacto.Designer.vb">
+      <DependentUpon>controlBuscaContacto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controlBuscaContacto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlClientes.Designer.vb">
+      <DependentUpon>ControlClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlClientes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controlcontactos.Designer.vb">
+      <DependentUpon>Controlcontactos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controlcontactos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlSeguimiento.Designer.vb">
+      <DependentUpon>controlSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controlSeguimiento.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlBuscaCliente.Designer.vb">
+      <DependentUpon>controlBuscaCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controlBuscaCliente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlProductos.Designer.vb">
+      <DependentUpon>ControlProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProductos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlBuscaProducto.Designer.vb">
+      <DependentUpon>controlBuscaProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controlBuscaProducto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuarios.Designer.vb">
+      <DependentUpon>ControlUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuarios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlBuscaTipos.Designer.vb">
+      <DependentUpon>controlBuscaTipos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controlBuscaTipos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlUsuariosDetalle.Designer.vb">
+      <DependentUpon>ControlUsuariosDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlUsuariosDetalle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controlVentas.Designer.vb">
+      <DependentUpon>controlVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controlVentas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlVentasEditar.Designer.vb">
+      <DependentUpon>ControlVentasEditar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlVentasEditar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LoginChange.Designer.vb">
+      <DependentUpon>LoginChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesBusca.Designer.vb">
+      <DependentUpon>frmClientesBusca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesBusca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.vb">
+      <DependentUpon>Home.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pruebas.Designer.vb">
+      <DependentUpon>Pruebas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pruebas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Agenda.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Agenda.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlBuscaContacto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>controlBuscaContacto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlClientes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controlcontactos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Controlcontactos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlSeguimiento.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>controlSeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlBuscaCliente.resx">
+      <DependentUpon>controlBuscaCliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlProductos.resx">
+      <DependentUpon>ControlProductos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlBuscaProducto.resx">
+      <DependentUpon>controlBuscaProducto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuarios.resx">
+      <DependentUpon>ControlUsuarios.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlBuscaTipos.resx">
+      <DependentUpon>controlBuscaTipos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlUsuariosDetalle.resx">
+      <DependentUpon>ControlUsuariosDetalle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controlVentas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>controlVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlVentasEditar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlVentasEditar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginChange.resx">
+      <DependentUpon>LoginChange.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesBusca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmClientesBusca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pruebas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pruebas.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FONDO2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondo3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner1Segui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selSeguimientos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TSeguimientos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner1Prod.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selProductos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TProductos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TVentas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selVentas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner1Ventas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TUsuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selUsuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner1Usua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TConfiguracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\selConfiguracion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner1Conf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cadenas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DatosGotech\DatosGotech.vbproj">
+      <Project>{7FDAA2D6-2F98-405D-AD50-DF0933073F6B}</Project>
+      <Name>DatosGotech</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoMAin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoAgenda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address Silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bigger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Address Silver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

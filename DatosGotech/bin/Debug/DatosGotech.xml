@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DatosGotech
+</name>
+</assembly>
+<members>
+<member name="M:DatosGotech.OLEDB.seguimientos_retorna_codigo(System.Int32)">
+	<summary>
+ '''''''
+ </summary>
+	<param name="codigo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,11 @@
+bin\Debug\DatosGotech.dll
+bin\Debug\DatosGotech.pdb
+bin\Debug\DatosGotech.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DatosGotech.Resources.resources
+obj\Debug\DatosGotech.vbproj.GenerateResource.Cache
+obj\Debug\DatosGotech.dll
+obj\Debug\DatosGotech.xml
+obj\Debug\DatosGotech.pdb
+bin\Debug\DatosGotech.dll.config
+bin\Debug\app.config
